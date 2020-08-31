@@ -6,24 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/LauncherSc.unity
-    guid: 532e57e7fcd0e6d4fa73f1f57feb9c44
-  - enabled: 1
-    path: Assets/Scenes/SelectAvatarSc.unity
-    guid: b82a3143174f7cc4e9fcd8b904edd758
-  - enabled: 1
-    path: Assets/Scenes/MainSc.unity
-    guid: e2aa2f6b99b840844b34a06a074d8d22
-  - enabled: 1
-    path: Assets/Scenes/TrainingSc.unity
-    guid: 318847806a6d2ad478a1a9248ea3778a
-  - enabled: 1
-    path: Assets/Scenes/Pre-matchSc.unity
-    guid: ccd5414191219be46a71fd52cc2b0f1a
-  - enabled: 1
-    path: Assets/Scenes/ChallengesSc.unity
-    guid: efbd7ee0178042e48a337368b835b6bf
-  - enabled: 1
-    path: Assets/Scenes/MatchSc.unity
-    guid: a72a0426ae7317d46a025fc19e924e80
+    path: Assets/Scenes/TestSc2.unity
+    guid: 1a2071c75d89ce24ca0db20badf11a5b
   m_configObjects: {}
