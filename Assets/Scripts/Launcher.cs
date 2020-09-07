@@ -20,7 +20,7 @@ namespace com.compA.gameA
         private byte maxPlayersPerRoom = 4;
 
         private string gameVersion = "1.0";
-        public string levelName = "MatchSc";
+        string levelName = "TestSc2";
         
         private bool isPlayerConnected;
 
