@@ -1,30 +1,42 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using Photon.Pun;
-using System.Runtime.CompilerServices;
 
-public class TestSc2PlayerController: MonoBehaviourPun
+public class TestSc2PlayerController : MonoBehaviourPun
 {
     public int speed = 10;
 
-    public int n;
+    Color syncColor = Color.grey;
 
     private void Start()
     {
+        if (photonView.IsMine)
+        {
+            gameObject.tag = "Local Player";
+            Debug.Log("Tag is:" + gameObject.tag);
+        }
+
         Debug.Log("Start playerPrefab photonview.IsMine = ** " + photonView.IsMine);
         Debug.Log("Start PlyrPrefab isConnected = ** " + PhotonNetwork.IsConnected);
+
     }
 
     void Update()
     {
-         if(photonView.IsMine) Move();
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
+        if (photonView.IsMine)
         {
-            Debug.Log("Sphere Collider OnTriggerEnter");
-            other.GetComponent<Renderer>().material.color = Color.red;
+            Move();
+
+            gameObject.GetComponent<Renderer>().material.color = syncColor;
+
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                syncColor = gameObject.GetComponent<Renderer>().material.color = Color.magenta;
+            }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                syncColor = gameObject.GetComponent<Renderer>().material.color = Color.cyan;
+            }
         }
     }
 
@@ -34,20 +46,10 @@ public class TestSc2PlayerController: MonoBehaviourPun
 
         transform.position += Movement * speed * Time.deltaTime;
     }
-
-    [PunRPC]
-    public void SetCubeColor(int playersCount)
-    {
-        if (playersCount == 1) this.GetComponent<Renderer>().material.color = Color.yellow;
-        else if (playersCount == 2) this.GetComponent<Renderer>().material.color = Color.blue;
-        else if (playersCount == 3) this.GetComponent<Renderer>().material.color = Color.green;
-        else this.GetComponent<Renderer>().material.color = Color.red;
-    }
-
-    public void SendCubeColor(int pCount)
-    {
-        this.photonView.RPC("SetCubeColor", RpcTarget.All, pCount);
-    }
 }
+
+ 
+  
+
 
 

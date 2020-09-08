@@ -14,10 +14,6 @@ public class TestScs2GameManager : MonoBehaviourPunCallbacks
     public Button b3;
     public Button b4;
 
-    TestSc2PlayerController test2plyr;
-
-    private int playerCount;
-
     private void Awake()
     {
         PhotonNetwork.AutomaticallySyncScene = true;
@@ -33,14 +29,11 @@ public class TestScs2GameManager : MonoBehaviourPunCallbacks
         Vector3 v = new Vector3(randomX, 1, randomZ);
         if (playerPrefab != null)
             PhotonNetwork.Instantiate(this.playerPrefab.name, v, Quaternion.identity);
-        // TODO playerCount = PhotonNetwork.CurrentRoom.PlayerCount;
-        
-        // TODO if(playerCount > 1) test2plyr.SendCubeColor(playerCount);
+
     }
 
     private void Start()
     {
-        //if(PhotonNetwork.CurrentRoom.PlayerCount == 1)
         //b1.gameObject.SetActive(false);
         //b2.gameObject.SetActive(false);
         //b3.gameObject.SetActive(false);
@@ -61,18 +54,9 @@ public class TestScs2GameManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        playerCount = PhotonNetwork.CurrentRoom.PlayerCount;
-
         Debug.Log("POV OnJoineRoom called");
         Debug.Log("Joined to Room = ** " + PhotonNetwork.CurrentRoom.Name);
         InstantiatePlayer();
-
-        playerCount = PhotonNetwork.CurrentRoom.PlayerCount;
-        Debug.Log("Playercount: " + playerCount);
-        // TODO checkout any callback to insert above code
-        //if (playerCount > 1) 
-            //test2plyr.SendCubeColor(playerCount);
     }
-
  
 }
