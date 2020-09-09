@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using Photon.Pun;
 
-public class TestSc2PlayerController : MonoBehaviourPun
+public class T2PlayerController : MonoBehaviourPun
 {
     public int speed = 10;
 

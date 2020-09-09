@@ -6,7 +6,7 @@ using Photon.Pun;
 //It can be used only after joined a room, 
 //This script allows us to join a room
 
-public class TestScs2GameManager : MonoBehaviourPunCallbacks
+public class T2GameManager : MonoBehaviourPunCallbacks
 {
     public GameObject playerPrefab;
     public Button b1;

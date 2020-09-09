@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class MovementController : MonoBehaviour
+public class MoveController : MonoBehaviour
 {
     [SerializeField]
     private float speed = 5f;

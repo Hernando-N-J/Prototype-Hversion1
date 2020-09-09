@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Photon.Pun;
 using TMPro;
 
-public class PlayerSetup : MonoBehaviourPunCallbacks
+public class PxlPlayerSetup : MonoBehaviourPunCallbacks
 {
 
     [SerializeField]
@@ -20,14 +18,14 @@ public class PlayerSetup : MonoBehaviourPunCallbacks
         if (photonView.IsMine)
         {
 
-            transform.GetComponent<MovementController>().enabled = true;
+            transform.GetComponent<MoveController>().enabled = true;
             FPSCamera.GetComponent<Camera>().enabled = true;
 
 
         }
         else
         {
-            transform.GetComponent<MovementController>().enabled = false;
+            transform.GetComponent<MoveController>().enabled = false;
             FPSCamera.GetComponent<Camera>().enabled = false;
 
         }

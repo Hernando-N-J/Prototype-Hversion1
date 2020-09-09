@@ -51,7 +51,7 @@ public class TakingDamage : MonoBehaviourPunCallbacks
     {
         if (photonView.IsMine)
         {
-            PixelGunGameManager.instance.LeaveRoom();
+            PxlGameManager.instance.LeaveRoom();
         }
       
     }

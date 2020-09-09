@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Photon.Pun;
 
-public class TestSc2PlayerTakeDamage : MonoBehaviour
+public class T2PlayerTakeDamage : MonoBehaviour
 {
     public int health;
     public int startHealth = 100;

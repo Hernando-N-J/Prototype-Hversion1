@@ -3,13 +3,13 @@ using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.SceneManagement;
 
-public class PixelGunGameManager : MonoBehaviourPunCallbacks
+public class PxlGameManager : MonoBehaviourPunCallbacks
 {
 
     [SerializeField]
     GameObject playerPrefab;
 
-    public static PixelGunGameManager instance;
+    public static PxlGameManager instance;
 
 
     private void Awake()
@@ -83,4 +83,8 @@ public class PixelGunGameManager : MonoBehaviourPunCallbacks
 
 
 
+}
+
+class PixelGunGameManager
+{
 }

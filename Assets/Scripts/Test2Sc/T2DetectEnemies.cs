@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Photon.Pun;
 
-public class TestSc2DetectEnemies : MonoBehaviourPun
+public class T2DetectEnemies : MonoBehaviourPun
 {
     private void OnTriggerEnter(Collider other)
     {
