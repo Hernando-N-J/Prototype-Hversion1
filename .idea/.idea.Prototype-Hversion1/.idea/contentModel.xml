@@ -384,7 +384,7 @@
           <e p="Test2Sc" t="Include">
             <e p="DetectEnemies.cs" t="Include" />
             <e p="GameManagerT2.cs" t="Include" />
-            <e p="Launcher.cs" t="Include" />
+            <e p="LaunchManager.cs" t="Include" />
             <e p="MoveController.cs" t="Include" />
             <e p="PlayerControllerT2.cs" t="Include" />
             <e p="PlayerTakeDamage.cs" t="Include" />

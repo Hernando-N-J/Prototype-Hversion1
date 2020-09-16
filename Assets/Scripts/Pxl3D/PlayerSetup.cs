@@ -1,47 +1,50 @@
-﻿using Photon.Pun;
-using TMPro;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using TMPro;
 
-namespace Pxl3D
+public class PlayerSetup : MonoBehaviourPunCallbacks
 {
-    public class PlayerSetup : MonoBehaviourPunCallbacks
+
+    [SerializeField]
+    GameObject FPSCamera;
+
+    [SerializeField]
+    TextMeshProUGUI playerNameText;
+
+    // Start is called before the first frame update
+    void Start()
     {
-        [SerializeField] private GameObject fpsCamera;
-        [SerializeField] private TextMeshProUGUI playerNameText;
 
-        // Start is called before the first frame update
-        void Start()
+        if (photonView.IsMine)
         {
 
-            if (photonView.IsMine)
-            {
-
-                transform.GetComponent<MoveController>().enabled = true;
-                fpsCamera.GetComponent<Camera>().enabled = true;
+            transform.GetComponent<MovementController>().enabled = true;
+            FPSCamera.GetComponent<Camera>().enabled = true;
 
 
-            }
-            else
-            {
-                transform.GetComponent<MoveController>().enabled = false;
-                fpsCamera.GetComponent<Camera>().enabled = false;
-
-            }
-
-
-            SetPlayerUI();
+        }
+        else
+        {
+            transform.GetComponent<MovementController>().enabled = false;
+            FPSCamera.GetComponent<Camera>().enabled = false;
 
         }
 
-        void SetPlayerUI()
-        {
-            if (playerNameText!=null)
-            {
-                playerNameText.text = photonView.Owner.NickName;
 
-            }
+        SetPlayerUI();
+
+    }
+
+    void SetPlayerUI()
+    {
+        if (playerNameText!=null)
+        {
+            playerNameText.text = photonView.Owner.NickName;
+
         }
+    }
 
     
-    }
 }

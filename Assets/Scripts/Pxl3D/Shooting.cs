@@ -45,7 +45,7 @@ public class Shooting : MonoBehaviour
 
                 if (_hit.collider.gameObject.CompareTag("Player")&&!_hit.collider.gameObject.GetComponent<PhotonView>().IsMine)
                 {
-                    _hit.collider.gameObject.GetComponent<PhotonView>().RPC("TakeDamage",RpcTarget.AllBuffered,10f);
+                    _hit.collider.gameObject.GetComponent<PhotonView>().RPC("ShootingTakeDamage",RpcTarget.AllBuffered,10f);
                 }
 
 

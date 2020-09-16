@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
-using Pxl3D;
-using Test2Sc;
 using UnityEngine.UI;
 
 public class TakingDamage : MonoBehaviourPunCallbacks
@@ -53,7 +51,7 @@ public class TakingDamage : MonoBehaviourPunCallbacks
     {
         if (photonView.IsMine)
         {
-            PGameManager.Instance.LeaveRoom();
+            PixelGunGameManager.instance.LeaveRoom();
         }
       
     }

@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine.Serialization;
 
 public class LaunchManager : MonoBehaviourPunCallbacks
 {
-    public GameObject EnterGamePanel;
-    public GameObject ConnectionStatusPanel;
-    public GameObject LobbyPanel;
+    public GameObject enterGamePanel;
+    public GameObject connectionStatusPanel;
+    public GameObject lobbyPanel;
 
 
     #region Unity Methods
@@ -25,9 +26,9 @@ public class LaunchManager : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
-        EnterGamePanel.SetActive(true);
-        ConnectionStatusPanel.SetActive(false);
-        LobbyPanel.SetActive(false);
+        enterGamePanel.SetActive(true);
+        connectionStatusPanel.SetActive(false);
+        lobbyPanel.SetActive(false);
       
         
     }
@@ -48,8 +49,8 @@ public class LaunchManager : MonoBehaviourPunCallbacks
         if (!PhotonNetwork.IsConnected)
         {
             PhotonNetwork.ConnectUsingSettings();
-            ConnectionStatusPanel.SetActive(true);
-            EnterGamePanel.SetActive(false);
+            connectionStatusPanel.SetActive(true);
+            enterGamePanel.SetActive(false);
 
         }
 
@@ -71,8 +72,8 @@ public class LaunchManager : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         Debug.Log( PhotonNetwork.NickName+ " Connected to photon server.");
-        LobbyPanel.SetActive(true);
-        ConnectionStatusPanel.SetActive(false);
+        lobbyPanel.SetActive(true);
+        connectionStatusPanel.SetActive(false);
 
     }
 

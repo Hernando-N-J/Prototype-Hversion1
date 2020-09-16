@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="55b10a51-0a30-4369-a04e-bd0bf1ab5984" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,8 +30,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Test2Sc/GameManagerT2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Test2Sc/LaunchManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Test2Sc/PlayerTakeDamage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Test2Sc/Launcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../MP Tevfik/Pxl3DG/PG3D proj/Assets/Scripts/TakingDamage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../MP Tevfik/Pxl3DG/PG3D proj/Assets/Scripts/PixelGunGameManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -24,11 +44,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Pxl3D/PlayerNameInputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Others/Launcher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pxl3D/PGameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Test2Sc/Launcher.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Test2Sc/GameManagerT2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test2Sc/DetectEnemiesT2.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test2Sc/DetectEnemies.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test2Sc/PlayerTakeDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test2Sc/Launcher.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test2Sc/PlayerControllerT2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test2Sc/LaunchManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test2Sc/GameManagerT2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pxl3D/TakingDamage.cs" />
       </list>
     </option>
   </component>
@@ -94,6 +117,9 @@
       <workItem from="1599764569170" duration="622000" />
       <workItem from="1599765472410" duration="22458000" />
       <workItem from="1599799439265" duration="1130000" />
+      <workItem from="1599867460052" duration="3191000" />
+      <workItem from="1599870707417" duration="4005000" />
+      <workItem from="1599948250120" duration="6550000" />
     </task>
     <servers />
   </component>
@@ -102,6 +128,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
@@ -114,11 +151,16 @@
       <screen x="0" y="0" width="1807" height="976" />
     </state>
     <state x="115" y="223" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1807.976@0.0.1807.976" timestamp="1599765096168" />
-    <state x="501" y="148" key="SettingsEditor" timestamp="1599800203844">
-      <screen x="0" y="0" width="1807" height="976" />
+    <state x="444" y="131" key="SettingsEditor" timestamp="1599867564403">
+      <screen x="0" y="0" width="1603" height="862" />
     </state>
+    <state x="444" y="131" key="SettingsEditor/0.0.1603.862@0.0.1603.862" timestamp="1599867564403" />
     <state x="501" y="148" key="SettingsEditor/0.0.1807.976@0.0.1807.976" timestamp="1599800203844" />
     <state x="842" y="132" key="SettingsEditor/0.0.1825.987@0.0.1825.987" timestamp="1599707917928" />
+    <state x="869" y="14" width="922" height="875" key="dock-window-1" timestamp="1599959533371">
+      <screen x="0" y="0" width="1739" height="939" />
+    </state>
+    <state x="869" y="14" width="922" height="875" key="dock-window-1/0.0.1739.939@0.0.1739.939" timestamp="1599959533371" />
     <state x="1035" y="219" width="672" height="678" key="search.everywhere.popup" timestamp="1599708719314">
       <screen x="0" y="0" width="1825" height="987" />
     </state>

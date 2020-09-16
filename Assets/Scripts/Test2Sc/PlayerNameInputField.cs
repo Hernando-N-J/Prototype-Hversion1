@@ -1,8 +1,8 @@
-﻿using UnityEngine;
+﻿using Photon.Pun;
+using UnityEngine;
 using UnityEngine.UI;
-using Photon.Pun;
 
-namespace com.compA.gameA
+namespace Test2Sc
 {
   
     [RequireComponent(typeof(InputField))]

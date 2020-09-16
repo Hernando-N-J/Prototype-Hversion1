@@ -17,7 +17,7 @@ namespace Test2Sc
             {
                 if (Input.GetKeyDown(KeyCode.Z) && !photonView.IsMine)
                 {
-                    other.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.AllBuffered, 10);
+                    other.GetComponent<PhotonView>().RPC("ShootingTakeDamage", RpcTarget.AllBuffered, 10);
                 
                 }
             }
@@ -48,6 +48,7 @@ namespace Test2Sc
             other.GetComponent<Renderer>().material.color = Color.yellow;
         }
 
+        // FIX if I keep the sphere collider active, it takes the shooting
 
     }
 }
